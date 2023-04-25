@@ -1,0 +1,1 @@
+# MJML rendered in nuxt
