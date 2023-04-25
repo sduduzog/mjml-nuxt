@@ -1,10 +1,17 @@
 <template>
-  <div v-html="rendered.html"></div>
+  <div v-html="results"></div>
 </template>
 
 <script setup>
 import mjml2html from 'mjml';
-import something from '@/assets/mjml/test.mjml?raw'
+import handlebars from 'handlebars'
+import mjmlSource from '@/assets/mjml/test.mjml?raw'
 
-const rendered = mjml2html(something)
+const rendered = mjml2html(mjmlSource)
+
+const template = handlebars.compile(rendered.html)
+
+const results = template({
+  msg: "Hello, world!"
+})
 </script>

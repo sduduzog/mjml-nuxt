@@ -2,7 +2,9 @@
   <mj-body>
     <mj-section>
       <mj-column>
-        <mj-image width="80px" src="https://gits.co.za/gits.png"></mj-image>
+        <mj-text>
+          {{ msg }}
+        </mj-text>
       </mj-column>
     </mj-section>
   </mj-body>
