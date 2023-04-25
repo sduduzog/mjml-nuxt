@@ -1,7 +1,4 @@
 <template>
-  <div>
-    {{ something }}
-  </div>
   <div v-html="rendered.html"></div>
 </template>
 
